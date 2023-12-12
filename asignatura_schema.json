@@ -1,0 +1,157 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Generated schema for Root",
+    "type": "object",
+    "properties": {
+      "asignatura": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "codigo": {
+            "type": "string"
+          },
+          "creditos": {
+            "type": "number"
+          },
+          "semestre": {
+            "type": "number"
+          },
+          "asignatura_obligatoria": {
+            "type": "boolean"
+          },
+          "carrera": {
+            "type": "string"
+          },
+          "facultad": {
+            "type": "string"
+          },
+          "horas_semanales": {
+            "type": "number"
+          },
+          "horas_periodo_academico": {
+            "type": "number"
+          },
+          "clasificación_ueb": {
+            "type": "string"
+          },
+          "clasificacion_acofi": {
+            "type": "string"
+          },
+          "profesores": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nombre": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "cedula": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "nombre",
+                "email",
+                "cedula"
+              ]
+            }
+          },
+          "horario": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "dia": {
+                  "type": "string"
+                },
+                "hora_inicio": {
+                  "type": "string"
+                },
+                "hora_fin": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "dia",
+                "hora_inicio",
+                "hora_fin"
+              ]
+            }
+          },
+          "syllabus": {
+            "type": "object",
+            "properties": {
+              "resultados_aprendizaje": {
+                "type": "string"
+              },
+              "evaluacion_calificacion": {
+                "type": "string"
+              },
+              "actividades_aprendizaje": {
+                "type": "string"
+              },
+              "semanas": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "semana_sesion": {
+                      "type": "number"
+                    },
+                    "modulos_temas": {
+                      "type": "string"
+                    },
+                    "act_asincronico": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "semana_sesion",
+                    "modulos_temas",
+                    "act_asincronico"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "resultados_aprendizaje",
+              "evaluacion_calificacion",
+              "actividades_aprendizaje",
+              "semanas"
+            ]
+          },
+          "prerequisitos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "nombre",
+          "codigo",
+          "creditos",
+          "semestre",
+          "asignatura_obligatoria",
+          "carrera",
+          "facultad",
+          "horas_semanales",
+          "horas_periodo_academico",
+          "clasificación_ueb",
+          "clasificacion_acofi",
+          "profesores",
+          "horario",
+          "syllabus",
+          "prerequisitos"
+        ]
+      }
+    },
+    "required": [
+      "asignatura"
+    ]
+  }

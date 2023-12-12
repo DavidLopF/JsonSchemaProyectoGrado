@@ -1,0 +1,311 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Generated schema for Root",
+    "type": "object",
+    "properties": {
+      "estudiante": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "apellido": {
+            "type": "string"
+          },
+          "cedula": {
+            "type": "string"
+          },
+          "expedida": {
+            "type": "string"
+          },
+          "direccion": {
+            "type": "string"
+          },
+          "telefono": {
+            "type": "string"
+          },
+          "correo": {
+            "type": "string"
+          },
+          "fechaNacimiento": {
+            "type": "string"
+          },
+          "lugarNacimiento": {
+            "type": "string"
+          },
+          "edad": {
+            "type": "number"
+          },
+          "estadoCivil": {
+            "type": "string"
+          },
+          "nombrePadre": {
+            "type": "string"
+          },
+          "nombreMadre": {
+            "type": "string"
+          },
+          "direccionPadres": {
+            "type": "string"
+          },
+          "carrera": {
+            "type": "string"
+          },
+          "estado": {
+            "type": "string"
+          },
+          "materiasCursadas": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nombre": {
+                  "type": "string"
+                },
+                "codigo": {
+                  "type": "string"
+                },
+                "creditos": {
+                  "type": "number"
+                },
+                "semestre": {
+                  "type": "number"
+                },
+                "asignatura_obligatoria": {
+                  "type": "boolean"
+                },
+                "carrera": {
+                  "type": "string"
+                },
+                "facultad": {
+                  "type": "string"
+                },
+                "horas_semanales": {
+                  "type": "number"
+                },
+                "horas_periodo_academico": {
+                  "type": "number"
+                },
+                "clasificación_ueb": {
+                  "type": "string"
+                },
+                "clasificacion_acofi": {
+                  "type": "string"
+                },
+                "profesor": {
+                  "type": "object",
+                  "properties": {
+                    "nombre": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "cedula": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "nombre",
+                    "email",
+                    "cedula"
+                  ]
+                },
+                "horario": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "dia": {
+                        "type": "string"
+                      },
+                      "hora_inicio": {
+                        "type": "string"
+                      },
+                      "hora_fin": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "dia",
+                      "hora_inicio",
+                      "hora_fin"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "nombre",
+                "codigo",
+                "creditos",
+                "semestre",
+                "asignatura_obligatoria",
+                "carrera",
+                "facultad",
+                "horas_semanales",
+                "horas_periodo_academico",
+                "clasificación_ueb",
+                "clasificacion_acofi",
+                "profesor",
+                "horario"
+              ]
+            }
+          },
+          "plan_estudio_restante": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nombre": {
+                  "type": "string"
+                },
+                "codigo": {
+                  "type": "string"
+                },
+                "creditos": {
+                  "type": "number"
+                },
+                "semestre": {
+                  "type": "number"
+                },
+                "asignatura_obligatoria": {
+                  "type": "boolean"
+                },
+                "carrera": {
+                  "type": "string"
+                },
+                "facultad": {
+                  "type": "string"
+                },
+                "horas_semanales": {
+                  "type": "number"
+                },
+                "horas_periodo_academico": {
+                  "type": "number"
+                },
+                "clasificación_ueb": {
+                  "type": "string"
+                },
+                "clasificacion_acofi": {
+                  "type": "string"
+                },
+                "horario": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "dia": {
+                        "type": "string"
+                      },
+                      "hora_inicio": {
+                        "type": "string"
+                      },
+                      "hora_fin": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "dia",
+                      "hora_inicio",
+                      "hora_fin"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "nombre",
+                "codigo",
+                "creditos",
+                "semestre",
+                "asignatura_obligatoria",
+                "carrera",
+                "facultad",
+                "horas_semanales",
+                "horas_periodo_academico",
+                "clasificación_ueb",
+                "clasificacion_acofi",
+                "horario"
+              ]
+            }
+          },
+          "fallasAsignaturas": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "codigo_ asignatura": {
+                  "type": "string"
+                },
+                "fallas": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "codigo_ asignatura",
+                "fallas"
+              ]
+            }
+          },
+          "orden_pago": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id_orden": {
+                  "type": "string"
+                },
+                "codigo_concepto": {
+                  "type": "number"
+                },
+                "concepto": {
+                  "type": "string"
+                },
+                "cantidad": {
+                  "type": "number"
+                },
+                "valor": {
+                  "type": "number"
+                },
+                "pago_realizado": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "id_orden",
+                "codigo_concepto",
+                "concepto",
+                "cantidad",
+                "valor",
+                "pago_realizado"
+              ]
+            }
+          }
+        },
+        "required": [
+          "nombre",
+          "apellido",
+          "cedula",
+          "expedida",
+          "direccion",
+          "telefono",
+          "correo",
+          "fechaNacimiento",
+          "lugarNacimiento",
+          "edad",
+          "estadoCivil",
+          "nombrePadre",
+          "nombreMadre",
+          "direccionPadres",
+          "carrera",
+          "estado",
+          "materiasCursadas",
+          "plan_estudio_restante",
+          "fallasAsignaturas",
+          "orden_pago"
+        ]
+      }
+    },
+    "required": [
+      "estudiante"
+    ]
+  }

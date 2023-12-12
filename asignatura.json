@@ -4,6 +4,7 @@
         "codigo": "Código único de la asignatura",
         "creditos": 3,
         "semestre": 2,
+        "asignatura_obligatoria": true,
         "carrera": "Nombre de la carrera",
         "facultad": "Nombre de la facultad",
         "horas_semanales": 2,
@@ -14,7 +15,12 @@
             {
                 "nombre": "Nombre del profesor",
                 "email": "correo@universidad.edu",
-                "codigo": 3
+                "cedula": "54658524"
+            },
+            {
+                "nombre": "Nombre del profesor 2",
+                "email": "correo@universidad.edu 2",
+                "cedula": "54658525"
             }
         ],
         "horario": [
@@ -35,17 +41,17 @@
             "actividades_aprendizaje": "Descripción de las actividades a desarrollar",
             "semanas": [
                 {
-                    "semana_sesion": "1",
+                    "semana_sesion": 1,
                     "modulos_temas": "Temas de la asignatura",
                     "act_asincronico": "Lectura del texto guía"
                 },
                 {
-                    "semana_sesion": "2",
+                    "semana_sesion": 2,
                     "modulos_temas": "Temas de la asignatura",
                     "act_asincronico": "Lectura del texto guía"
                 },
                 {
-                    "semana_sesion": "3",
+                    "semana_sesion": 3,
                     "modulos_temas": "Temas de la asignatura",
                     "act_asincronico": "Lectura del texto guía"
                 }

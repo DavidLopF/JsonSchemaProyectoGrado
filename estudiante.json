@@ -1,0 +1,107 @@
+{
+    "estudiante": {
+        "nombre": "Nombres del estudiante",
+        "apellido": "Apellidos del estudiante",
+        "cedula": "Cedula del estudiante",
+        "expedida": "Lugar de expedición de la cedula",
+        "direccion": "Dirección de residencia del estudiante",
+        "telefono": "Telefono del estudiante",
+        "correo": "Correo electrónico del estudiante",
+        "fechaNacimiento": "Fecha de nacimiento del estudiante",
+        "lugarNacimiento": "Ciudad de origen del estudiante",
+        "edad": 25,
+        "estadoCivil": "Soltero",
+        "nombrePadre": "Nombre del padre, dado caso N/A",
+        "nombreMadre": "Nombre de la madre, dado caso N/A",
+        "direccionPadres": "Dirección de residencia de los padres",
+        "carrera": "Ingeniería de Sistemas",
+        "estado": "matriculado",
+        "materiasCursadas": [
+            {
+                "nombre": "Nombre de la asignatura",
+                "codigo": "Código único de la asignatura",
+                "creditos": 3,
+                "semestre": 2,
+                "asignatura_obligatoria": true,
+                "carrera": "Nombre de la carrera",
+                "facultad": "Nombre de la facultad",
+                "horas_semanales": 2,
+                "horas_periodo_academico": 30,
+                "clasificación_ueb": "A",
+                "clasificacion_acofi": "C",
+                "profesor": {
+                    "nombre": "Profesor1",
+                    "email": "profesor1@universidad.edu",
+                    "cedula": "54658524"
+                },
+                "horario": [
+                    {
+                        "dia": "Lunes",
+                        "hora_inicio": "09:00",
+                        "hora_fin": "11:00"
+                    },
+                    {
+                        "dia": "Miércoles",
+                        "hora_inicio": "09:00",
+                        "hora_fin": "11:00"
+                    }
+                ]
+            }
+        ],
+        "plan_estudio_restante": [
+            {
+                "nombre": "Nombre de la asignatura no vista",
+                "codigo": "Código único de la asignatura",
+                "creditos": 3,
+                "semestre": 2,
+                "asignatura_obligatoria": true,
+                "carrera": "Nombre de la carrera",
+                "facultad": "Nombre de la facultad",
+                "horas_semanales": 2,
+                "horas_periodo_academico": 30,
+                "clasificación_ueb": "A",
+                "clasificacion_acofi": "C",
+                "horario": [
+                    {
+                        "dia": "Lunes",
+                        "hora_inicio": "09:00",
+                        "hora_fin": "11:00"
+                    },
+                    {
+                        "dia": "Miércoles",
+                        "hora_inicio": "09:00",
+                        "hora_fin": "11:00"
+                    }
+                ]
+            }
+        ],
+        "fallasAsignaturas": [
+            {
+                "codigo_ asignatura": "31231",
+                "fallas": 2
+            },
+            {
+                "codigo_ asignatura": "1234",
+                "fallas": 4
+            }
+        ],
+        "orden_pago": [
+            {
+                "id_orden": "31231",
+                "codigo_concepto": 2131,
+                "concepto": "Matricula",
+                "cantidad": 1,
+                "valor": 5600000,
+                "pago_realizado":true
+            },
+            {
+                "id_orden": "12345",
+                "codigo_concepto": 1663,
+                "concepto": "Certificado",
+                "cantidad": 2,
+                "valor": 56000,
+                "pago_realizado":false
+            }
+        ]
+    }
+}

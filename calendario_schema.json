@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Generated schema for Root",
+    "type": "object",
+    "properties": {
+      "calendario": {
+        "type": "object",
+        "properties": {
+          "año": {
+            "type": "number"
+          },
+          "semestre": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nombre": {
+                  "type": "string"
+                },
+                "fecha_inicio": {
+                  "type": "string"
+                },
+                "fecha_fin": {
+                  "type": "string"
+                },
+                "actividades": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nombre": {
+                        "type": "string"
+                      },
+                      "fecha": {
+                        "type": "string"
+                      },
+                      "fecha_inicio": {
+                        "type": "string"
+                      },
+                      "fecha_fin": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "nombre"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "nombre",
+                "fecha_inicio",
+                "fecha_fin",
+                "actividades"
+              ]
+            }
+          }
+        },
+        "required": [
+          "año",
+          "semestre"
+        ]
+      }
+    },
+    "required": [
+      "calendario"
+    ]
+  }
