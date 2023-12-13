@@ -92,7 +92,10 @@
                 "concepto": "Matricula",
                 "cantidad": 1,
                 "valor": 5600000,
-                "pago_realizado":true
+                "pago_realizado": true,
+                "fecha_pago": "2019-01-01",
+                "fecha_vencimiento": "2019-01-01",
+                "fecha_creacion": "2019-01-01"
             },
             {
                 "id_orden": "12345",
@@ -100,7 +103,10 @@
                 "concepto": "Certificado",
                 "cantidad": 2,
                 "valor": 56000,
-                "pago_realizado":false
+                "pago_realizado": false,
+                "fecha_pago": "2019-01-01",
+                "fecha_vencimiento": "2019-01-01",
+                "fecha_creacion": "2019-01-01"
             }
         ]
     }
